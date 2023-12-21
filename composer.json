@@ -1,0 +1,42 @@
+{
+    "name": "abdulkadir/super-ban",
+    "description": "Superban package for banning users based on request thresholds in Laravel.",
+    "keywords": ["laravel", "package", "ban", "middleware"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdulkadir",
+            "email": "abdulrasakabdulkadir@yahoo.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.37"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Abdulkadir\\Superban\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Abdulkadir\\Superban\\src\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Abdulkadir\\Superban\\src\\Providers\\SuperbanServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
