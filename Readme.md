@@ -9,6 +9,9 @@
             {
                 "type": "path",
                 "url": "relative/or/absolute/path/to/your/local/package"
+                "options": {
+                    "symlink": true
+                }
             }
         ],
         "require": {
